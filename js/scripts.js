@@ -9,20 +9,24 @@ $(document).ready(function() {
 
   var surveyValue = (wallSelect + climateSelect + healthSelect + gunSelect + marriageSelect);
 
+  alert(surveyValue);
+
   if (surveyValue <= 7) {
     $("#very-liberal").show();
     alert("Very liberal");
-  } else if (8 <= surveyValue <= 10) {
-    $("#liberal").show();
+  } else if (surveyValue <= 10) {
+    // $("#liberal").show();
     alert("liberal");
-  } else if (11 <= surveyValue <= 13) {
-    $("#non-partisan").show();
-  } else if (14 <= surveyValue <= 20) {
-    $("#conservative").show();
+  } else if (surveyValue <= 13) {
+    // $("#non-partisan").show();
+    alert("non-partisan");
+  } else if (surveyValue <= 20) {
+    // $("#conservative").show();
+    alert("conservative");
   } else {
-    $("#very-conservative").show();
+    // $("#very-conservative").show();
     alert("Very conservative");
-  };
+  }
 
   event.preventDefault();
   });
