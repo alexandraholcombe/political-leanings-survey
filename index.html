@@ -11,14 +11,66 @@
   <body>
     <div class="container">
       <div class="jumbotron">
-        <h1>Gross Animal Facts!</h1>
-        <h2>All about gross sea animals!</h2>
+        <h1>Conservative or Liberal!</h1>
+        <h2>Which Side are You on?</h2>
       </div>
 
-      <div class="row">
-        <div class="col-md"
+      <div id="survey">
+        <p>On a scale from "Strongly Disagree" to "Strongly Agree", rate your political views to find out where you stand.</p>
+        <form>
+          <div class="form-group conservative">
+            <label for="wall">We should "Build A Wall."</label>
+            <select class="form-control" id="wall">
+              <option value="1">Strongly Disagree</option>
+              <option value="2">Partially Disagree</option>
+              <option value="3">Neither Agree nor Disagree</option>
+              <option value="4">Partially Agree</option>
+              <option value="5">Strongly Agree</option>
+            </select>
+          </div>
+          <div class="form-group liberal">
+            <label for="climate">Climate change is affecting our planet.</label>
+            <select class="form-control" id="climate">
+              <option value="5">Strongly Disagree</option>
+              <option value="4">Partially Disagree</option>
+              <option value="3">Neither Agree nor Disagree</option>
+              <option value="2">Partially Agree</option>
+              <option value="1">Strongly Agree</option>
+            </select>
+          </div>
+          <div class="form-group conservative">
+            <label for="gun">Everyone has a right to own a firearm.</label>
+            <select class="form-control" id="gun">
+              <option value="1">Strongly Disagree</option>
+              <option value="2">Partially Disagree</option>
+              <option value="3">Neither Agree nor Disagree</option>
+              <option value="4">Partially Agree</option>
+              <option value="5">Strongly Agree</option>
+            </select>
+          </div>
+          <div class="form-group liberal">
+            <label for="health">The government should ensure all citizens have access to healthcare.</label>
+            <select class="form-control" id="health">
+              <option value="5">Strongly Disagree</option>
+              <option value="4">Partially Disagree</option>
+              <option value="3">Neither Agree nor Disagree</option>
+              <option value="2">Partially Agree</option>
+              <option value="1">Strongly Agree</option>
+            </select>
+          </div>
+          <div class="form-group liberal">
+            <label for="marriage">Same-sex marriage is a right.</label>
+            <select class="form-control" id="marriage">
+              <option value="5">Strongly Disagree</option>
+              <option value="4">Partially Disagree</option>
+              <option value="3">Neither Agree nor Disagree</option>
+              <option value="2">Partially Agree</option>
+              <option value="1">Strongly Agree</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-warning">Submit</button>
+        </form>
       </div>
-
 
     </div>
 
