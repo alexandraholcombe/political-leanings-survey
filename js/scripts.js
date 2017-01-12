@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
   $("#survey form").submit(function(event) {
+  $(".result-box").hide();
   var wallSelect = parseInt($("#wall").val());
   var climateSelect = parseInt($("#climate").val());
   var healthSelect = parseInt($("#health").val());
@@ -9,24 +10,29 @@ $(document).ready(function() {
 
   var surveyValue = (wallSelect + climateSelect + healthSelect + gunSelect + marriageSelect);
 
-  alert(surveyValue);
+
+  if (surveyValue > 12 && marriageSelect < 3) {
+  $(".result").fadeIn();
+  $("#ford").fadeIn();
+} else {
 
   if (surveyValue <= 7) {
-    $("#very-liberal").show();
-    alert("Very liberal");
+    $(".result").fadeIn();
+    $("#bernie").fadeIn();
   } else if (surveyValue <= 10) {
-    // $("#liberal").show();
-    alert("liberal");
+    $(".result").fadeIn();
+    $("#clinton").fadeIn();
   } else if (surveyValue <= 13) {
-    // $("#non-partisan").show();
-    alert("non-partisan");
-  } else if (surveyValue <= 20) {
-    // $("#conservative").show();
-    alert("conservative");
+    $(".result").fadeIn();
+    $("#truman").fadeIn();
+    } else if (surveyValue <= 20) {
+    $(".result").fadeIn();
+    $("#hwbush").fadeIn();
   } else {
-    // $("#very-conservative").show();
-    alert("Very conservative");
+    $(".result").fadeIn();
+    $("#wbush").fadeIn();
   }
+}
 
   event.preventDefault();
   });

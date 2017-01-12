@@ -18,3 +18,39 @@
   margin-left: 4%;
   margin-top: 0;
 }
+
+div.result {
+  /*border: 2px red solid;*/
+  width: 50%;
+  margin: 5% auto;
+  display: none;
+}
+
+.president {
+  width: 100%;
+  border: 3px solid black;
+}
+
+#bernie {
+  display: none;
+}
+
+#clinton {
+  display: none;
+}
+
+#truman {
+  display: none;
+}
+
+#hwbush {
+  display: none;
+}
+
+#wbush {
+  display: none;
+}
+
+#ford {
+  display: none;
+}
