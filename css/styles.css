@@ -2,5 +2,19 @@
   background-image: url("../images/jumbotronimage.jpg");
   background-size: 100%;
   color: white;
-  text-shadow: 5px 5px black;
+  text-shadow: 4px 4px 4px black;
+  padding-bottom: 3%
+}
+
+.jumbotron h1 {
+  font-family: 'Rakkas', serif;
+  margin-top: 3%;
+  text-transform: uppercase;
+  color: white;
+}
+
+.jumbotron h2 {
+  font-style: italic;
+  margin-left: 4%;
+  margin-top: 0;
 }
